@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Creating Views</h1>
+    <p>
+        Views contain the HTML served by your application and separate your controller / application logic from your presentation logic. Views are stored in the  resources/views directory. A simple view might look something like this:
+        Views contain the HTML served by your application and separate your controller / application logic from your presentation logic. Views are stored in the  resources/views directory. A simple view might look something like this:
+    </p>
+    <h2>Determining If A View Exists</h2>
+    <p>
+        Using the first method, you may create the first view that exists in a given array of views. This is useful if your application or package allows views to be customized or overwritten:
+    </p>
+    <p>
+        Occasionally, you may need to share a piece of data with all views that are rendered by your application. You may do so using the view facade's share method. Typically, you should place calls to share within a service provider's  boot method. You are free to add them to the AppServiceProvider or generate a separate service provider to house them:
+    </p>
+</body>
+</html>

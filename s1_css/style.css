@@ -1,0 +1,19 @@
+body{
+    
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+h1, h2{
+ color:white;
+ background: rgb(17, 100, 233);
+ text-align: center;
+ padding: 10px;  
+ border: solid 6px red ;  
+}
+
+p{
+    background: rgb(240, 147, 118);
+    padding: 10px;
+    text-align: justify;
+    text-indent: 20px;
+    border: 6px black solid;
+}
