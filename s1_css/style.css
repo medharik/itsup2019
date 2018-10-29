@@ -17,3 +17,9 @@ p{
     text-indent: 20px;
     border: 6px black solid;
 }
+img{
+    width: 200px;
+    float: left;
+    margin-right: 20px;    
+
+}
