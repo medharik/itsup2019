@@ -1,5 +1,8 @@
 body{
     font-family: 'Ubuntu', sans-serif;
+    background: url('images/back.jpg') fixed;
+ 
+    
 }
 h1, h2{
     background: rgb(20, 212, 30);
@@ -17,7 +20,7 @@ h2{
     font-size: 17px;
 }
 p{ 
-   
+    background: rgba(0, 0, 0, 0.411);
   /*  border-style: double solid;
    border-width:6px;
    border-color: red */
@@ -26,10 +29,14 @@ p{
    text-indent: 20px;
 text-align: justify;
 border-radius: 10px;
+width: 800px;
+margin: auto;
+color: white;
+font-weight: bold;
 }
 p::first-letter{
     font-size: 80px;
-    color: #767100;
+    color: #ebe7a2;
     float: left;
     margin-right: 25px;
 }
