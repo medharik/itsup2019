@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 1200px;
+    height: 65px;
+    margin: auto;
+border-bottom: 2px black solid;
+padding: 5px;
+}
+header img{
+    height: 50px;
+    margin-top: 12px;
+
+}
+header nav{
+    width: 400px;
+height: 20px;
+float: right;
+margin-top: 24px;
+
+}
+
+header nav a {
+    font-family: "lato",sans-serif!important;
+    font-size: 20px;
+    color: #333;
+
+}
