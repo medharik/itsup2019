@@ -1,0 +1,61 @@
+header{
+    background: rgb(17, 32, 248);
+}
+main{
+    
+    min-height: 500px;
+    background: rgb(183, 185, 201);
+  
+}
+footer{
+    height: 50px;
+    background: rgb(9, 10, 12);
+}
+.large {
+    width: 1000px;
+    margin: auto;
+}
+#logo{
+ width: 200px;
+ height: 100px;
+background: rgb(235, 20, 163);
+float: left;
+}
+.separateur{
+clear: both;
+}
+
+#tel{
+    width: 300px;
+    height: 50px;
+   background: rgb(92, 1, 62);
+   float: right;
+   }
+   
+   nav{
+       height: 40px;
+       width: 100%;
+       background: rgb(245, 84, 245);
+       clear: both;
+   }
+   .produit{
+    width: 33.3333%;
+
+border: 20px solid rgb(189, 177, 189);
+float: left;
+box-sizing: border-box;
+}
+.produit img{
+   max-width: 100%; 
+}
+.produit h4 {
+    color: #0f294c;
+    text-align: center;
+    font-size: 33px;
+}
+.produit h5 {
+    color: #3d2ba1;
+    text-align: center;
+    font-size: 33px;
+    background: white;
+}
