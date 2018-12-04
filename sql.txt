@@ -1,0 +1,22 @@
+create table employee(
+matricule int primary key AUTO_INCREMENT,
+nom varchar(100) ,
+prenom  varchar(100) ,
+adresse text ,
+salaire float  ,
+specialite  varchar(100)
+    
+ )
+ 
+
+ insert into employee(nom, prenom,adresse,salaire,specialite) 
+ values('dabbab','youssef','fhar el farah casablanca ',
+ 6500,'informaticien commecial')
+
+ SELECT * FROM employee
+
+ SELECT nom,specialite FROM employee
+
+ SELECT * FROM `employee` where specialite like '%info%'
+ 
+ SELECT * FROM `employee` where specialite like '%info%'
