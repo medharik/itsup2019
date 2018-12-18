@@ -1,0 +1,15 @@
+--les employes sans sepcialite
+select * from employes where specialite is null
+
+--liste des departements (nom,adresse) et leurs employes (nom)
+--liste des employes et leurs departement (ayant un salaire entre 3000 et 10000) 
+select d.nom_dep , d.adresse_dep , e.nom from departement d , employes e where
+
+d.id_dep=e.dep_id
+and 
+e.salaire BETWEEN 3000 and 10000
+
+
+--listes des employes et leurs departement ayant un salaire > a celui de 'karimi'
+
+select e.nom, e.salaire , d.nom_dep from departement d , employes e where d.id_dep = e.dep_id and e.salaire > (select salaire from employes where nom='karimi')

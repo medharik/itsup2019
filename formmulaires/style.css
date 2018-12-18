@@ -1,0 +1,15 @@
+label{
+    cursor: pointer;
+}
+table{
+    background: deepskyblue;
+    padding: 20px;
+}
+td, th{
+    padding: 20px;
+}
+input[type='submit']{
+background: deeppink;
+padding: 5px;
+color: white;
+}
