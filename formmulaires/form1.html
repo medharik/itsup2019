@@ -12,7 +12,7 @@
         <table   border="0" align="center" >
             <tr>
                 <th>Login : </th>
-                <td><input type="text" name="login" id="login" placeholder="Entrer votre email"> <br>
+                <td><input required type="text" name="login" id="login" placeholder="Entrer votre email"> <br>
 </td>
             </tr>
 
@@ -24,8 +24,8 @@
             <tr>
                     <th>Situation familiale: </th>
                     <td>
-                        <input value="marie" type="radio" name="st" id="marie" ><label for="marie">Marié(e)</label>
-                        <input type="radio"  value="celibataire" name="st" id="celi" ><label for="celi">Célibataire</label>
+                        <input value="marie" required type="radio" name="st" id="marie" ><label for="marie">Marié(e)</label>
+                        <input type="radio"  required value="celibataire" name="st" id="celi" ><label for="celi">Célibataire</label>
                        
                         <br>
     </td>
@@ -43,7 +43,25 @@
                             <td><input type="file" id="cv"  ><br>
             </td>
                         </tr>
-            <tr>
+           <tr>
+               <td>Ville</td>
+               <td>
+                   <select name="ville" id="ville"  required>
+                    
+                       <option value="Casa">Casablanca</option>
+                       <option value="Rabat">Rabat</option>
+                       <option value="Settat">Settat</option>
+                       <option selected></option>
+                   </select>
+               </td>
+           </tr>
+<tr>
+    <td>Adresse</td>
+    <td>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </td>
+</tr>
+                        <tr>
                 <td></td>
                 <td><input type="submit" value="Connexion"></td>
             </tr>
