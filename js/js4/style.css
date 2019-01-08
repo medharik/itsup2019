@@ -1,0 +1,13 @@
+.violet{
+    background: purple !important; 
+}
+
+.rouge{
+    background: red;
+}
+.cacher{
+    display: none;
+}
+.montrer{
+    display: block;
+}

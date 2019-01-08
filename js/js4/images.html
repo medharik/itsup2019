@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+
+<script src="test.js"></script>
+</head>
+<body>
+    <h1>    FRAMEWORK : un groupe de composant reutilisables  (is a set of reusable)
+</h1>
+    
+<div class="container">
+    <div class="row">
+        
+            <form action="" class="col-md-6">
+
+                    <div class="form-group">
+                        <label for="n1">Nombre 1</label>
+                        <input type="text" name="n1" id="n1" class="form-control">
+                    </div>
+                    <div class="form-group">
+                            <label for="n2">Nombre 1</label>
+                            <input type="text" name="n2" id="n2" class="form-control">
+                    </div>
+                        
+                    <div class="form-group">
+                            <label for="r">Reponse </label>
+                            <input type="number" onchange="corriger()" auocomplete="off" name="r" id="r" class="form-control">
+                    </div>
+                        
+                        <div class="form-group">
+                                <input onclick="corriger()" type="button" class=" btn btn-primary btn-sm violet rouge" value="corriger">
+                            </div>
+                </form>
+                <div class="col-md-6">
+                    <img src="images/smiley-gentil.jpg" class="img-fluid cacher" width="200" >
+
+                </div>
+    </div>
+</div>
+</body>
+</html>
