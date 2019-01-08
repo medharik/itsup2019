@@ -1,0 +1,8 @@
+.ok{
+color: green;
+border: 1px solid green;
+}
+.ko{
+color: red;
+border: 1px solid red;
+}
