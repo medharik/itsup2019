@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>js 6 regex</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="test.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 mx-auto bg-light">
+
+                <form action="">
+
+                    <div class="form-group">
+                        <label for="np">Nom & prenom :</label>
+                        <input type="text" id="np" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="ci">Niveau </label>
+                      
+                      bac :  <input name="f" onclick="filiere()" type="radio" id="bac" class="form-control">
+                        Nieavu bac<input name="f" onclick="filiere()" type="radio" id="nbac" class="form-control">
+                    </div>
+                    <div class="form-group cacher" id="fbac">
+                        <label for="np">Filieres bac</label>
+<select name="" id="lbaac" class="form-control">
+    <option value="tsdi">TS DI</option>
+    <option value="tssr">TS SR</option>
+</select>                    </div>
+<div class="form-group cacher" id="fnbac">
+        <label for="np">Filieres niveau bac</label>
+<select name="" id="lbaac"  class="form-control">
+<option value="tmi">T  M I</option>
+<option value="tac">T A C</option>
+</select>                    </div>
+                   
+
+<div class="form-group text-center">
+                        <input  onclick="validerTout()" class="btn btn-primary" type="button" id="ok" value="S'inscrire" onclick="validerTout()">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
