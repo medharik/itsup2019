@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS revision</title>
+   <script src="validation.js"></script>
+    <link rel="stylesheet" href="valdation.css">
+</head>
+<body>
+    <div id="erreur"></div>
+    <form action="http://google.fr">
+       <table align="center">
+           <tr>
+               <td>Matricule :</td>
+               <td><input type="text" name="mat" id="matricule"></td>
+           </tr>
+           <tr>
+            <td>Mot de passe  :</td>
+            <td><input type="password" name="p" id="p"></td>
+        </tr>
+        <tr>
+            <td>Confirmation :</td>
+            <td><input type="password" name="c" id="c"></td>
+        </tr>
+        <tr>
+            <td>Categorie de la voiture  :</td>
+            <td>
+                <select name="cat" id="cat" onchange="validercategorie()">
+                    <option value="100">A</option>
+                    <option value="200">B</option>
+                    <option value="300">C</option>
+                </select>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><input type="button" value="Valider" onclick="validerTout()"></td>
+        </tr>
+       </table>
+    </form>
+    <hr>
+
+  <div align="center">
+    <form action="" id="f1">
+        Cin : <input type="text" id="cin">
+        <input onclick="validerCin()" type="button" value="valider cin">
+    </form>
+  </div>
+</body>
+</html>
