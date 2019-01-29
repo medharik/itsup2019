@@ -1,0 +1,70 @@
+create table departement(
+id int primary key AUTO_INCREMENT,
+nom varchar(20) unique not null,
+adresse  text   
+
+)
+create table employee(
+id int primary key auto_increment,
+nom varchar(20) ,
+prenom varchar(20),    
+adresse text,    
+specialite varchar(20) not null,
+salaire float default 0,
+departement_id    int ,
+CONSTRAINT FOREIGN key (departement_id) references departement(id) on delete CASCADE,
+constraint UNIQUE(nom,prenom)   ,
+constraint check (salaire > 2000) 
+)
+
+--ajouter les departements
+insert into departement(nom,adresse) 
+values ('SI','RABAT allee citroniers num 7')
+
+--ajouter des employes
+insert into employee(nom,prenom,adresse,specialite,salaire,departement_id) values ('kamali','kamal','hay nahda num78 rabat','informaticien',9000,2)
+-- nom et salaire de tous les employes
+select nom,salaire from employee
+
+-- nom et salaire de tous les employes ayant un salaire > 8000
+select * from employee where salaire > 8000
+
+-- supprimer tout employe habitant a rabat
+delete from employee where adresse like '%rabat%'
+
+-- modifier l'adresse de l,empploye ayant id=2 
+update employee set adresse = 'HAY TACHAROUK RABAT num 9'
+where id=2
+
+--liste des employes qui habitent rabat (insesible a la casse)
+select * from employee where adresse like '%rabat%'
+
+les fonctions de groupe (aggregation) : sum , count , max , min , avg
+-- nombre d'employee
+select count(*)  from employee
+
+-- somme des salaire
+select sum(salaire) from employee
+-- ... de ceux qui habitent a casa
+select sum(salaire) , count(*) , avg(salaire) ,max(salaire), min(salaire) from employee where adresse like '%casa%'
+,
+-- nombre d'employes par departement
+
+select departement_id,count(*) from 
+employee group by `departement_id`
+
+-- nom , adresse  des employees et nom de departement  
+
+
+select e.nom, e.adresse , d.nom
+from employee e , departement d
+where d.id=e.departement_id  (c la consdition de jointure)
+
+-- -- nom des departement ainsi que le nombre d'employe par departement
+
+select d.nom , count(*) from 
+
+employee e , departement d
+where
+e.departement_id=d.id
+group by nom 
