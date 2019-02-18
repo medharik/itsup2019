@@ -1,0 +1,9 @@
+.violet{
+    background: purple;
+    color: white;
+    border: 2px solid rgb(93, 1, 93);
+}
+.violet:hover{
+    background: rgb(93, 1, 93);
+    border: 2px solid rgb(93, 1, 93);
+}
