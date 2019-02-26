@@ -1,9 +1,14 @@
-.rouge{
-    background: rgb(248, 63, 63) !important;
-}
-.full{
+.plein{
     width: 100%;
 }
-.gris{
-    background: #EEEEEE;
+.col-md-4{
+    margin-top: 15px;
+    text-align: center;
 }
+.rouge{
+    background: red !important;
+}
+.col-md-4 img{
+    border-radius:10px !important;
+}
+

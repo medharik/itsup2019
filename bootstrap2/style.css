@@ -1,0 +1,50 @@
+.colmenu{
+    background: purple !important;
+}
+.full{
+    width:100%;
+}
+.col-md-6{
+    text-align: center;
+}
+
+@media (max-width:576px){
+    #slider{
+        display: none;
+    }
+}
+
+#menu{
+display: flex;
+justify-content: center
+}
+#menu a{
+    border: 2px solid black;
+  
+}
+.menu{
+    position: sticky;
+    top: -1px;
+    width: 100%;
+
+   z-index: 1000;
+   opacity: 0.9;
+}
+#slider{
+  margin-top: 70px!important;
+}
+.p{
+    position: relative;
+}
+.new{
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+.p:hover .new{
+    transform: rotate(360deg);
+    transition: 400s;
+}

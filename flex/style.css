@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.conteneur{
+    display: flex;
+    width: 100%;
+    height: 600px;
+
+    background: deepskyblue;
+}
+.c{
+    background: deeppink;
+    border: 1px solid black;
+}
+.d{
+    background: green;
+    border: 1px solid black;
+    width: 100%;
+    height: 50px;
+    
+}
+.c1{
+    flex: 1;
+    order: 3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column-reverse
+
+}
+.m{
+display: none;
+}
+.v{
+    display: block;
+
+}
+.c:hover{
+    background:white;
+     transition: 4s;
+}
+.c:hover .m{
+    display: block;
+   
+}
+.c:hover .v{
+    display: none;
+
+}
+.f{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.c2{
+    flex: 2;
+    order: 2;
+}
+
+.c3{
+    flex: 1;
+    order: 1;
+}
