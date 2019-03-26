@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
+      <script src="test.js"></script>
+    
+
+</head>
+<body>
+
+  <button id="b1" >Montrer</button>
+  <button id="b2" >Cacher</button>
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, distinctio? Officiis id voluptate natus ea quis tempora atque aliquid reiciendis, earum dolorum accusamus, soluta nisi doloribus inventore, quidem perferendis vitae.</p>
+
+    <hr>
+<input type="text" id="age"> <button id="ok">ok</button>
+<h2 id="resultat"></h2>
+
+
+<script>
+  
+          
+        $(document).ready(function(){
+            $('#b1').click(function(){
+
+                $('#para').show();
+            });
+            $('#b2').click(function(){
+                $('#para').hide();
+            });
+
+$('#ok').click(function(){
+
+var age =$('#age').val();
+    $('#resultat').text("age est "+$('#age').val()+"ans");
+    alert($('#resultat').text());
+
+});
+
+$('#age').keyup(function(){
+ 
+    $('#ok').click();
+    
+if(age<0){
+    $('#resultat').css('color','red');
+    
+}else{
+    $('#resultat').css('color','green');
+}
+
+});
+
+        });
+          
+          
+
+  </script>
+
+</body>
+</html>
